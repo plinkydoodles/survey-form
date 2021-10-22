@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Survey Form Project - for the freeCodeCamp Responsive Design Certificate.">
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+
+  <!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Main javascript -->
+  <script type="text/javascript" src='main.js'></script>
+
+  <title>Let The Games Begin!</title>
+</head>
+
+<body>
+  <!-- freeCodeCamp test suite
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  -->
+  <header class="header">
+
+    <!-- Image added in CSS -->
+
+
+  </header>
+
+  <section id="arrow-section" class="arrow-part">
+  	
+	<div class="arrow"></div>
+  </section>
+
+  <main class="main-section">
+  	
+    <form action="javascript:;" onsubmit="acknowledgeResponse()" id="survey-form">
+      <div class="title-h1-div">
+        <h1 id="title" class="title-h1">THE HUNGER GAMES SURVEY</h1>
+      </div>
+
+      <p id="description" class="form-desc">Thank you for taking the time to help us improve our platform.</p>
+
+      <label for="name" id="name-label" class="bold"><span class="required">* </span>Name:</label>
+      <input id="name" type="text" placeholder="Enter your full name" required>
+
+      <label for="number" id="number-label" class="bold"><span class="required">* </span>Age:</label>
+      <input id="number" type="number" min="12" max="100" placeholder="Enter your age" required>
+
+      <label for="email" id="email-label" class="bold"><span class="required">* </span>Email:</label>
+      <input id="email" type="email" placeholder="Enter your email address" required>
+
+      
+
+      <label for="dropdown" id="dropdown-label" class="bold"><span class="required">* </span>District:</label>
+      <select id="dropdown" name="dropdown" required>
+        <option disabled selected value>Choose your district</option>
+        <option>District 1 - Luxury Items for the Capitol</option>
+        <option>District 2 - Masonry and Weapon Manufacturing</option>
+        <option>District 3 - Technology</option>
+        <option>District 4 - Fishing</option>
+        <option>District 5 - Power and Electricity</option>
+        <option>District 6 - Transportation</option>
+        <option>District 7 - Lumber</option>
+        <option>District 8 - Textile</option>
+        <option>District 9 - Grain</option>
+        <option>District 10 - Livestock</option>
+        <option>District 11 - Agriculture</option>
+        <option>District 12 - Coal Mining</option>
+        <option>District 13 - Nuclear Technology</option>
+      </select>
+
+
+       <fieldset class="tribute-volunteer">
+        <legend class="radio-legend bold">Will you volunteer as tribute?</legend>
+
+        <div class="container-radio">
+
+        	<div class="radio-col1">
+	        <input type="radio" id="radio1" class="radio" name="radio" value="saber-color" checked>
+	        <label for="radio1" id="radio-option1" class="radio-label" >Yes, I volunteer as tribute!</label>
+	    	</div>
+
+	    	<div class="radio-col1">
+	        <input type="radio" id="radio2" class="radio" name="radio" value="saber-color">
+	        <label for="radio2" id="radio-option2" class="radio-label">No</label>
+	    	</div>
+	        
+	        <div class="radio-col1">
+	        <input type="radio" id="radio3" class="radio" name="radio" value="saber-color">
+	        <label for="radio3" id="radio-option3" class="radio-label">Maybe</label>
+	        </div>
+
+	    </div>
+      </fieldset>
+
+    
+       <fieldset class="special-skills">
+        <legend class="checkbox-legend bold">What are your special skills?</legend>
+  <div class="container-chkbx">
+      
+        <div class="checkbox-col1">
+        <input type="checkbox" id="checkbox1" name="checkbox" value="archery" class="checkbox">
+        <label for="checkbox1" class="checkbox-label" id="check-option1">Archery</label>
+        </div>
+
+        <div class="checkbox-col1">
+        <input type="checkbox" id="checkbox2" name="checkbox" value="hunting" class="checkbox">
+        <label for="checkbox2" class="checkbox-label" id="check-option2">Running</label>
+        </div>
+
+        <div class="checkbox-col1">
+        <input type="checkbox" id="checkbox3" name="checkbox" value="swords" class="checkbox">
+        <label for="checkbox3" class="checkbox-label" id="check-option3">Hunting</label>
+        </div>
+
+        <div class="checkbox-col1">
+        <input type="checkbox" id="checkbox4" name="checkbox" value="running" class="checkbox">
+        <label for="checkbox4" class="checkbox-label" id="check-option3">Wrestling</label>
+        </div>
+
+        <div class="checkbox-col1">
+        <input type="checkbox" id="checkbox5" name="checkbox" value="Wrestling" class="checkbox">
+        <label for="checkbox5" class="checkbox-label" id="check-option3">Martial Arts</label>
+        </div>
+
+        <div class="checkbox-col1">
+        <input type="checkbox" id="checkbox6" name="checkbox" value="others" class="checkbox">
+        <label for="checkbox6" class="checkbox-label" id="check-option3">Other</label>
+        </div>
+   </div>
+
+      </fieldset>
+     
+
+      <label for="textarea" id="textarea-label" class="bold">Comments:</label>
+      <textarea id="textarea" rows="10" cols="20" placeholder="Write a comment, question or suggestion..."></textarea>
+
+      <button id="submit">Submit</button>
+    </form>
+  </main>
+
+
+  <footer>
+    <p id="footer" class="footer">Coded by Plinky Sumagyap for <a href="https://www.freecodecamp.org/plinkysumagyap"
+        target="_blank" class="footer-link-fcc">freeCodeCamp <i class="fa fa-free-code-camp" aria-hidden="true"></i></a>
+    </p>
+    <div class="my-links">
+      <a href="https://www.behance.net/plinkysumagyap" target="_blank" class="footer-link">
+        <i class="fa fa-behance-square fa-2x" aria-hidden="true"></i></a>
+      <a href="https://codepen.io/plinkydoodles/pen/vYZWZqx" target="_blank" class="footer-link">
+        <i class="fa fa-codepen fa-2x" aria-hidden="true"></i></a>
+      <a href="https://plinkydoodles.github.io/tribute-page" target="_blank" class="footer-link">
+        <i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+    </div>
+  </footer>
+
+</body>
+
+</html>

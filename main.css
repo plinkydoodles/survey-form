@@ -1,0 +1,643 @@
+/* Global Styling */
+
+body {
+  background-color: black;
+  font-family: sans-serif;
+  margin-bottom: 30px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 1.7em;
+  letter-spacing: 5px;
+  margin: 0;
+  line-height: 1.5em;
+
+}
+
+img {
+  margin: 0 auto;
+  max-width: 100%;
+  display: block;
+
+}
+
+.required {
+  color: red;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+#name, #number, #email, #dropdown, #textarea {
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+fieldset {
+  border-radius:10px;
+}
+
+/* Header */
+
+.header{
+
+  background-image: url("./images/mockingjay.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.arrow-part {
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Arrow Animation */
+
+.arrow {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+
+}
+
+.arrow::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  margin: 80vh auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-right: 4px solid #FFAE42;
+  border-bottom: 4px solid #FFAE42;
+  transform: rotate(45deg);
+  animation: 3s arrow infinite ease;
+}
+
+@keyframes arrow {
+
+  0%,
+  100% {
+    top: 50px;
+  }
+
+  50% {
+    top: 80px;
+  }
+}
+
+
+/* Form Main */
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 1em 1em 3em 1em;
+  background: #f0f0f0;
+  border: 5px solid #757575;
+  margin: 0 auto 0 auto;
+  max-width: 700px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+form input {
+  background: #ffffff;
+  border: 2px solid black;
+  margin-right: 2em;
+}
+
+input,
+select {
+  padding: 0.7em;
+  margin-bottom: 0.5em;
+  border: 2px solid black;
+  border-radius:10px;
+
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid #FFAE42;
+}
+
+input,
+button,
+fieldset,
+select,
+textarea {
+  grid-column: 2 / 3;
+
+}
+
+label {
+  padding: 0.5em 1em 0.5em 1em;
+  margin-right: 2em;
+  text-align: right;
+  grid-column: 1 / 2;
+}
+
+/* Form Header */
+
+.title-h1-div {
+  grid-column: 1 / 3;
+}
+
+.title-h1 {
+  grid-column: 1 / 3;
+  color: black;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  padding: 30px 0 5px 0;
+}
+
+.form-desc {
+
+  text-align: center;
+  line-height: 1.7em;
+  color: white;
+  grid-column: 1 / 3;
+  background: black;
+  padding: 1em;
+  margin-bottom: 40px;
+  font-size: 1em;
+  font-style: italic;
+  color: #FFAE42;
+  border-radius: 10px;
+
+}
+
+
+p {
+  text-align: center;
+  color: white;
+  padding-bottom: 15px;
+  font-weight: 700;
+}
+
+/* Radio Buttons */
+
+.radio {
+  margin: 0 5px 0 0;
+}
+
+.radio-label {
+  font-size: 1em;
+}
+
+.radio-legend {
+  text-align: left;
+  padding: 0 5px;
+}
+
+.tribute-volunteer {
+  margin: 0 1.6em 0.5em 0;
+  padding: 1em 1em 1.5em 1em;
+  background: white;
+  border: black 2px solid;
+  text-align: left;
+    width: 87%;
+}
+
+.container-radio {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 5px;
+
+    margin-left: 10px;
+
+}
+
+/* Checkboxes */
+
+.checkbox {
+  margin: 0 5px 0 0;
+}
+
+.checkbox-label {
+  font-size: 1em;
+}
+
+.checkbox-legend {
+  text-align: left;
+  padding: 0 5px;
+}
+
+.special-skills {
+  margin: 0 1.6em 0.5em 0;
+  padding: 1em 1em 1.5em 1em;
+  background: #ffffff;
+  border: black 2px solid;
+  text-align: left;
+   width: 87%;
+}
+
+
+.container-chkbx {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    margin-left: 10px;
+  }
+
+/* Radio/Checkbox Fieldsets */
+
+form fieldset {
+  margin: 0 auto;
+  text-align: right;
+}
+
+fieldset label {
+  padding: 0;
+}
+
+/* Select Menu */
+
+form select {
+  margin-right: 2em;
+  border: 2px solid black;
+  background: white;
+}
+
+/* Comments Textarea */
+
+textarea {
+  padding: 0.5em 0.5em 0 0.5em;
+  margin: 0.7em 0.7em 1.5em 0.7em;
+  background: white;
+  width: 90%;
+  border: 2px solid black;
+  margin-right: 2em;
+  margin-left: 0;
+  border-radius:10px;
+}
+
+/* Submit Button */
+
+form button {
+  grid-column: 1 / 3;
+  background: black;
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1em;
+  width: 40%;
+  margin: 0 auto;
+  border: 0;
+  color: white;
+  border-radius: 10px;
+}
+
+form button:hover {
+  outline: 2px solid #FFAE42;
+  color: #FFAE42;
+}
+
+/* Footer */
+
+footer a:link,
+footer a:visited,
+footer a:active {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #FFAE42;
+}
+
+.footer {
+  font-size: 1em;
+  padding-top: 30px;
+  margin-bottom: 20px;
+}
+
+.my-links {
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.footer-link {
+  padding: 0 15px 0 15px;
+}
+
+.footer-link:link,
+.footer-link:active,
+.footer-link:visited {
+  text-decoration: none;
+  color: #f9f9f9;
+}
+
+.footer-link:hover {
+  color: #FFAE42;
+}
+
+/* Mobile Responsive */
+
+/* Small Mobile */
+
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+
+form label {
+    text-align: left;
+    grid-column: 1 / 2;
+    padding-left: 0;
+    margin-bottom: 5px;
+  }
+
+  form input {
+    grid-column: 1 / 3;
+    width: 88%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  form textarea {
+    grid-column: 1 / 3;
+    width: 89%;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  form select {
+    grid-column: 1 / 3;
+    width: 93%;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  form fieldset {
+    grid-column: 1 / 3;
+    margin-right: 0;
+  }
+
+  /* Radios */
+  .radio-legend {
+    text-align: center;
+  }
+
+  .radio {
+    width: auto;
+    float: left;
+    margin-left: 10%;
+    margin-right: 10px;
+    margin-top: 3px;
+  }
+
+  .container-radio {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    margin-left: 10px;
+  }
+
+  .tribute-volunteer {
+        width: 84%;
+    grid-column: 1 / 3;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  /* Checkboxes */
+  .checkbox {
+    width: auto;
+    float: left;
+    margin-left: 10%;
+    margin-right: 10px;
+    margin-top: 3px;
+  }
+
+  .checkbox-legend {
+    text-align: center;
+  }
+
+  .container-chkbox {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    margin-left: 10px;
+
+  }
+
+  .special-skills {
+    width: 84%;
+    grid-column: 1 / 3;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+/* Medium Mobile */
+
+@media only screen and (min-width: 375px) and (max-width: 453px) {
+
+form label {
+    text-align: left;
+    grid-column: 1 / 2;
+    padding-left: 0;
+    margin-bottom: 5px;
+  }
+
+  form input {
+    grid-column: 1 / 3;
+    width: 88%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  form textarea {
+    grid-column: 1 / 3;
+    width: 89%;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  form select {
+    grid-column: 1 / 3;
+    width: 93%;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  form fieldset {
+    grid-column: 1 / 3;
+    margin-right: 0;
+  }
+
+  /* Radios */
+  .radio-legend {
+    text-align: center;
+  }
+
+  .radio {
+    width: auto;
+    float: left;
+    margin-left: 10%;
+    margin-right: 10px;
+    margin-top: 3px;
+  }
+
+  .container-radio {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    margin-left: 10px;
+  }
+
+  .tribute-volunteer {
+        width: 84%;
+    grid-column: 1 / 3;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  /* Checkboxes */
+  .checkbox {
+    width: auto;
+    float: left;
+    margin-left: 10%;
+    margin-right: 10px;
+    margin-top: 3px;
+  }
+
+  .checkbox-legend {
+    text-align: center;
+  }
+
+  .container-chkbox {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    margin-left: 10px;
+
+  }
+
+  .special-skills {
+    width: 84%;
+    grid-column: 1 / 3;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+/* Large Mobile */
+
+@media only screen and (min-width: 454px) and (max-width: 767px) {
+
+  form label {
+    text-align: left;
+    grid-column: 1 / 2;
+    padding-left: 0;
+    margin-bottom: 5px;
+  }
+
+  form input {
+    grid-column: 1 / 3;
+    width: 88%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  form textarea {
+    grid-column: 1 / 3;
+    width: 89%;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  form select {
+    grid-column: 1 / 3;
+    width: 93%;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  form fieldset {
+    grid-column: 1 / 3;
+    margin-right: 0;
+  }
+
+  /* Radios */
+  .radio-legend {
+    text-align: center;
+  }
+
+  .radio {
+    width: auto;
+    float: left;
+    margin-left: 10%;
+    margin-right: 10px;
+    margin-top: 3px;
+  }
+
+  .container-radio {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    margin-left: 10px;
+  }
+
+  .tribute-volunteer {
+        width: 84%;
+    grid-column: 1 / 3;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  /* Checkboxes */
+  .checkbox {
+    width: auto;
+    float: left;
+    margin-left: 10%;
+    margin-right: 10px;
+    margin-top: 3px;
+  }
+
+  .checkbox-legend {
+    text-align: center;
+  }
+
+  .container-chkbox {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    margin-left: 10px;
+
+  }
+
+  .special-skills {
+    width: 84%;
+    grid-column: 1 / 3;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+}
