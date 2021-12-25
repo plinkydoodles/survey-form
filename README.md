@@ -10,4 +10,4 @@ You can use HTML, JavaScript, and CSS to complete this project.
 
 ## Completed Project
 
-https://plinkydoodles.github.io/survey-form/
+https://plinkydoodles.github.io/survey-form
